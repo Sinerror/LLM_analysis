@@ -1,0 +1,73 @@
+{
+  "name": "api_deepseek-v4.1-flash",
+  "target": "api",
+  "model": "deepseek-v4.1-flash",
+  "sla_sec": 10.0,
+  "duration_sec": 40.0,
+  "closed": {
+    "1": {
+      "requests": 8,
+      "errors": 0,
+      "wall_sec": 40.3,
+      "req_per_sec": 0.198,
+      "out_tok_per_sec": 53.2,
+      "in_tok_per_sec": 92.0,
+      "ttft_p50": 4.147,
+      "ttft_p95": 8.026,
+      "latency_p50": 4.745,
+      "latency_p95": 8.41,
+      "by_kind": {
+        "triage": {
+          "n": 4,
+          "tokens_in_avg": 803.0,
+          "tokens_out_avg": 137.5,
+          "ttft_p95": 5.753,
+          "latency_p50": 4.006,
+          "latency_p95": 6.01
+        },
+        "draft": {
+          "n": 4,
+          "tokens_in_avg": 123.8,
+          "tokens_out_avg": 398.2,
+          "ttft_p95": 8.426,
+          "latency_p50": 5.297,
+          "latency_p95": 9.03
+        }
+      }
+    },
+    "8": {
+      "requests": 53,
+      "errors": 8,
+      "wall_sec": 52.6,
+      "req_per_sec": 0.856,
+      "out_tok_per_sec": 320.5,
+      "in_tok_per_sec": 418.9,
+      "ttft_p50": 4.449,
+      "ttft_p95": 12.612,
+      "latency_p50": 4.815,
+      "latency_p95": 12.714,
+      "by_kind": {
+        "triage": {
+          "n": 22,
+          "tokens_in_avg": 829.1,
+          "tokens_out_avg": 197.0,
+          "ttft_p95": 8.689,
+          "latency_p50": 3.9,
+          "latency_p95": 9.089
+        },
+        "draft": {
+          "n": 23,
+          "tokens_in_avg": 164.7,
+          "tokens_out_avg": 544.5,
+          "ttft_p95": 13.279,
+          "latency_p50": 5.807,
+          "latency_p95": 13.733
+        }
+      },
+      "error_sample": "ConnectError: [Errno 11001] getaddrinfo failed"
+    }
+  },
+  "open": [],
+  "started": "2026-11-10 15:54",
+  "max_rate_within_sla": null
+}

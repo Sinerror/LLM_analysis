@@ -1,0 +1,33 @@
+{
+  "name": "api_gpt-6-luna",
+  "target": "api",
+  "model": "gpt-6-luna",
+  "n": 150,
+  "accuracy": {
+    "topic": 0.94,
+    "priority": 0.8333,
+    "route": 0.9533,
+    "all": 0.7733
+  },
+  "ci95": {
+    "topic": 0.0391,
+    "priority": 0.0595,
+    "route": 0.0352,
+    "all": 0.0665
+  },
+  "invalid_json": 0,
+  "tokens": {
+    "triage_in": 725.2,
+    "triage_out": 69.0,
+    "draft_in": 176.4,
+    "draft_out": 98.9
+  },
+  "drafts": {
+    "n": 135,
+    "failed": 3,
+    "with_cjk": 0,
+    "truncated": 0,
+    "chars_avg": 380
+  },
+  "wall_sec": 337.4
+}

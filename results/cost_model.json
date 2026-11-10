@@ -1,0 +1,167 @@
+{
+  "as_of": "2026-11-10",
+  "usd_kzt": 448.98,
+  "spam_share": 0.08,
+  "requests_per_ticket": 1.92,
+  "api_usd_per_1000_tickets": {
+    "gpt-6-luna": 0.1687,
+    "gpt-6.1-sol": 3.3649,
+    "deepseek-v4.1-flash": 1.2235,
+    "claude-haiku-5-5": 0.1682
+  },
+  "api_not_measured": {
+    "claude-haiku-5-5": "gpt-6.1-sol"
+  },
+  "own": {
+    "A": {
+      "max_rate_within_sla": 10.0,
+      "capacity_tickets_per_day": 150000,
+      "idle_w": 11.5,
+      "load_w": 113.9,
+      "scenarios": {
+        "card": {
+          "usd_month_idle": 19.31,
+          "usd_month_at_capacity": 21.84,
+          "usd_per_1000_tickets_at_capacity": 0.0048,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 3784.0,
+            "gpt-6.1-sol": 189.0,
+            "deepseek-v4.1-flash": 521.0,
+            "claude-haiku-5-5": 3799.0
+          }
+        },
+        "full": {
+          "usd_month_idle": 90.91,
+          "usd_month_at_capacity": 93.44,
+          "usd_per_1000_tickets_at_capacity": 0.0205,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 17785.0,
+            "gpt-6.1-sol": 890.0,
+            "deepseek-v4.1-flash": 2448.0,
+            "claude-haiku-5-5": 17857.0
+          }
+        }
+      }
+    },
+    "B": {
+      "max_rate_within_sla": 14.0,
+      "capacity_tickets_per_day": 210000,
+      "idle_w": 13.4,
+      "load_w": 136.1,
+      "scenarios": {
+        "card": {
+          "usd_month_idle": 19.45,
+          "usd_month_at_capacity": 22.48,
+          "usd_per_1000_tickets_at_capacity": 0.0035,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 3814.0,
+            "gpt-6.1-sol": 191.0,
+            "deepseek-v4.1-flash": 525.0,
+            "claude-haiku-5-5": 3814.0
+          }
+        },
+        "full": {
+          "usd_month_idle": 91.05,
+          "usd_month_at_capacity": 94.08,
+          "usd_per_1000_tickets_at_capacity": 0.0147,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 17857.0,
+            "gpt-6.1-sol": 894.0,
+            "deepseek-v4.1-flash": 2458.0,
+            "claude-haiku-5-5": 17857.0
+          }
+        }
+      }
+    },
+    "C": {
+      "max_rate_within_sla": 14.0,
+      "capacity_tickets_per_day": 210000,
+      "idle_w": 17.7,
+      "load_w": 136.7,
+      "scenarios": {
+        "card": {
+          "usd_month_idle": 19.77,
+          "usd_month_at_capacity": 22.71,
+          "usd_per_1000_tickets_at_capacity": 0.0036,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 3876.0,
+            "gpt-6.1-sol": 194.0,
+            "deepseek-v4.1-flash": 534.0,
+            "claude-haiku-5-5": 3892.0
+          }
+        },
+        "full": {
+          "usd_month_idle": 91.37,
+          "usd_month_at_capacity": 94.31,
+          "usd_per_1000_tickets_at_capacity": 0.0148,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 17929.0,
+            "gpt-6.1-sol": 894.0,
+            "deepseek-v4.1-flash": 2458.0,
+            "claude-haiku-5-5": 17929.0
+          }
+        }
+      }
+    },
+    "D": {
+      "max_rate_within_sla": 2.5,
+      "capacity_tickets_per_day": 37500,
+      "idle_w": 16.3,
+      "load_w": 145.8,
+      "scenarios": {
+        "card": {
+          "usd_month_idle": 19.67,
+          "usd_month_at_capacity": 22.87,
+          "usd_per_1000_tickets_at_capacity": 0.0201,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 3907.0,
+            "gpt-6.1-sol": 193.0,
+            "deepseek-v4.1-flash": 531.0,
+            "claude-haiku-5-5": 3923.0
+          }
+        },
+        "full": {
+          "usd_month_idle": 91.27,
+          "usd_month_at_capacity": 94.47,
+          "usd_per_1000_tickets_at_capacity": 0.0829,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 18147.0,
+            "gpt-6.1-sol": 894.0,
+            "deepseek-v4.1-flash": 2468.0,
+            "claude-haiku-5-5": 18221.0
+          }
+        }
+      }
+    },
+    "E": {
+      "max_rate_within_sla": 2.0,
+      "capacity_tickets_per_day": 30000,
+      "idle_w": 15.8,
+      "load_w": 141.6,
+      "scenarios": {
+        "card": {
+          "usd_month_idle": 19.63,
+          "usd_month_at_capacity": 22.74,
+          "usd_per_1000_tickets_at_capacity": 0.0249,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 3907.0,
+            "gpt-6.1-sol": 193.0,
+            "deepseek-v4.1-flash": 531.0,
+            "claude-haiku-5-5": 3923.0
+          }
+        },
+        "full": {
+          "usd_month_idle": 91.23,
+          "usd_month_at_capacity": 94.34,
+          "usd_per_1000_tickets_at_capacity": 0.1034,
+          "breakeven_tickets_per_day": {
+            "gpt-6-luna": 18221.0,
+            "gpt-6.1-sol": 894.0,
+            "deepseek-v4.1-flash": 2468.0,
+            "claude-haiku-5-5": 18221.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "employees": [
+    {
+      "code": "anna",
+      "name": "Анна Смирнова",
+      "topics": [
+        "payment",
+        "return"
+      ],
+      "max_load": 8
+    },
+    {
+      "code": "igor",
+      "name": "Игорь Петров",
+      "topics": [
+        "delivery"
+      ],
+      "max_load": 10
+    },
+    {
+      "code": "olga",
+      "name": "Ольга Ким",
+      "topics": [
+        "delivery",
+        "return"
+      ],
+      "max_load": 8
+    },
+    {
+      "code": "dmitry",
+      "name": "Дмитрий Орлов",
+      "topics": [
+        "defect",
+        "tech"
+      ],
+      "max_load": 6
+    },
+    {
+      "code": "maria",
+      "name": "Мария Фёдорова",
+      "topics": [
+        "payment",
+        "delivery",
+        "defect",
+        "tech",
+        "return"
+      ],
+      "segments": [
+        "key"
+      ],
+      "max_load": 6
+    }
+  ],
+  "head": {
+    "code": "sergey",
+    "name": "Сергей Волков",
+    "role": "руководитель поддержки, получает эскалации при переполнении"
+  },
+  "spam_queue": "spam"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "api_gpt-6.1-sol",
+  "target": "api",
+  "model": "gpt-6.1-sol",
+  "n": 150,
+  "accuracy": {
+    "topic": 0.9333,
+    "priority": 0.8333,
+    "route": 0.9467,
+    "all": 0.7667
+  },
+  "ci95": {
+    "topic": 0.0409,
+    "priority": 0.0595,
+    "route": 0.0372,
+    "all": 0.0672
+  },
+  "invalid_json": 0,
+  "tokens": {
+    "triage_in": 725.2,
+    "triage_out": 66.4,
+    "draft_in": 177.1,
+    "draft_out": 100.5
+  },
+  "drafts": {
+    "n": 138,
+    "failed": 0,
+    "with_cjk": 0,
+    "truncated": 0,
+    "chars_avg": 388
+  },
+  "wall_sec": 166.6
+}

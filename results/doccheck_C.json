@@ -1,0 +1,3293 @@
+{
+ "eval_id": "eval-20261110-151420-own-C",
+ "label": "own-C",
+ "created_at": "2026-11-10 15:18",
+ "prompts": "4cc4818c",
+ "models": {
+  "scout": "gpt-6-luna",
+  "analyst": "local (local)",
+  "critic": "gpt-6.1-sol"
+ },
+ "embed_model": "intfloat/multilingual-e5-large",
+ "params": {
+  "max_claims": 10,
+  "debate_rounds": 2,
+  "critic_max_iters": 4,
+  "claim_concurrency": 4,
+  "use_critic": false
+ },
+ "reuse_claims": "eval-20261107-180552-analyst-only",
+ "summary": {
+  "docs": 15,
+  "planted": 56,
+  "claims": 123,
+  "extracted": 1.0,
+  "recall_strict": 0.786,
+  "recall_flagged": 0.875,
+  "recall_r0": 0.786,
+  "critic_only": 0,
+  "clean_claims": 58,
+  "fp_strict_clean": 0.155,
+  "fp_review_clean": 0.362,
+  "extra_claims": 1,
+  "fp_strict_all": 0.153,
+  "fp_review_all": 0.356,
+  "grounding_rate": 0.9108,
+  "grounding": "143/157",
+  "cost_usd": 0.0,
+  "cost_per_doc": 0.0,
+  "elapsed_s": 525.8,
+  "llm_calls": 139,
+  "claim_errors": 0,
+  "by_kind": {
+   "outdated": {
+    "n": 3,
+    "caught": 2,
+    "flagged": 3,
+    "caught_r0": 2,
+    "extracted": 3
+   },
+   "condition": {
+    "n": 15,
+    "caught": 14,
+    "flagged": 14,
+    "caught_r0": 14,
+    "extracted": 15
+   },
+   "number": {
+    "n": 8,
+    "caught": 6,
+    "flagged": 7,
+    "caught_r0": 6,
+    "extracted": 8
+   },
+   "object_swap": {
+    "n": 9,
+    "caught": 7,
+    "flagged": 8,
+    "caught_r0": 7,
+    "extracted": 9
+   },
+   "deadline": {
+    "n": 5,
+    "caught": 3,
+    "flagged": 3,
+    "caught_r0": 3,
+    "extracted": 5
+   },
+   "overstatement": {
+    "n": 6,
+    "caught": 6,
+    "flagged": 6,
+    "caught_r0": 6,
+    "extracted": 6
+   },
+   "not_in_sources": {
+    "n": 3,
+    "caught": 2,
+    "flagged": 2,
+    "caught_r0": 2,
+    "extracted": 3
+   },
+   "wrong_clause": {
+    "n": 2,
+    "caught": 1,
+    "flagged": 2,
+    "caught_r0": 1,
+    "extracted": 2
+   },
+   "arithmetic": {
+    "n": 5,
+    "caught": 3,
+    "flagged": 4,
+    "caught_r0": 3,
+    "extracted": 5
+   }
+  },
+  "by_difficulty": {
+   "basic": {
+    "docs": 10,
+    "planted": 37,
+    "claims": 83,
+    "extracted": 1.0,
+    "recall_strict": 0.784,
+    "recall_flagged": 0.892,
+    "recall_r0": 0.784,
+    "critic_only": 0,
+    "clean_claims": 40,
+    "fp_strict_clean": 0.15,
+    "fp_review_clean": 0.35,
+    "extra_claims": 0,
+    "fp_strict_all": 0.15,
+    "fp_review_all": 0.35,
+    "grounding_rate": 0.8972,
+    "grounding": "96/107",
+    "cost_usd": 0.0,
+    "cost_per_doc": 0.0,
+    "elapsed_s": 383.3,
+    "llm_calls": 94,
+    "claim_errors": 0,
+    "by_kind": {
+     "outdated": {
+      "n": 3,
+      "caught": 2,
+      "flagged": 3,
+      "caught_r0": 2,
+      "extracted": 3
+     },
+     "condition": {
+      "n": 8,
+      "caught": 8,
+      "flagged": 8,
+      "caught_r0": 8,
+      "extracted": 8
+     },
+     "number": {
+      "n": 7,
+      "caught": 5,
+      "flagged": 6,
+      "caught_r0": 5,
+      "extracted": 7
+     },
+     "object_swap": {
+      "n": 8,
+      "caught": 6,
+      "flagged": 7,
+      "caught_r0": 6,
+      "extracted": 8
+     },
+     "deadline": {
+      "n": 2,
+      "caught": 1,
+      "flagged": 1,
+      "caught_r0": 1,
+      "extracted": 2
+     },
+     "overstatement": {
+      "n": 4,
+      "caught": 4,
+      "flagged": 4,
+      "caught_r0": 4,
+      "extracted": 4
+     },
+     "not_in_sources": {
+      "n": 3,
+      "caught": 2,
+      "flagged": 2,
+      "caught_r0": 2,
+      "extracted": 3
+     },
+     "wrong_clause": {
+      "n": 2,
+      "caught": 1,
+      "flagged": 2,
+      "caught_r0": 1,
+      "extracted": 2
+     }
+    }
+   },
+   "hard": {
+    "docs": 5,
+    "planted": 19,
+    "claims": 40,
+    "extracted": 1.0,
+    "recall_strict": 0.789,
+    "recall_flagged": 0.842,
+    "recall_r0": 0.789,
+    "critic_only": 0,
+    "clean_claims": 18,
+    "fp_strict_clean": 0.167,
+    "fp_review_clean": 0.389,
+    "extra_claims": 1,
+    "fp_strict_all": 0.158,
+    "fp_review_all": 0.368,
+    "grounding_rate": 0.94,
+    "grounding": "47/50",
+    "cost_usd": 0.0,
+    "cost_per_doc": 0.0,
+    "elapsed_s": 142.5,
+    "llm_calls": 45,
+    "claim_errors": 0,
+    "by_kind": {
+     "arithmetic": {
+      "n": 5,
+      "caught": 3,
+      "flagged": 4,
+      "caught_r0": 3,
+      "extracted": 5
+     },
+     "condition": {
+      "n": 7,
+      "caught": 6,
+      "flagged": 6,
+      "caught_r0": 6,
+      "extracted": 7
+     },
+     "overstatement": {
+      "n": 2,
+      "caught": 2,
+      "flagged": 2,
+      "caught_r0": 2,
+      "extracted": 2
+     },
+     "deadline": {
+      "n": 3,
+      "caught": 2,
+      "flagged": 2,
+      "caught_r0": 2,
+      "extracted": 3
+     },
+     "number": {
+      "n": 1,
+      "caught": 1,
+      "flagged": 1,
+      "caught_r0": 1,
+      "extracted": 1
+     },
+     "object_swap": {
+      "n": 1,
+      "caught": 1,
+      "flagged": 1,
+      "caught_r0": 1,
+      "extracted": 1
+     }
+    }
+   }
+  }
+ },
+ "docs": [
+  {
+   "doc": "d01_otvet_vozvrat.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d01",
+   "rows": [
+    {
+     "id": "d01-A",
+     "kind": "outdated",
+     "text": "Согласно п. 4.1 оферты, полный возврат первой оплаты возможен, если обратиться в течение 30 календарных дней с даты оплаты.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C1",
+      "C2"
+     ],
+     "extracted": true,
+     "r0": [
+      "PARTIALLY_SUPPORTED",
+      "SUPPORTED"
+     ],
+     "final": [
+      "PARTIALLY_SUPPORTED",
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted",
+      "accepted"
+     ],
+     "critic_suggested": [
+      null,
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d01-B",
+     "kind": "condition",
+     "text": "Если вы решите вернуть только неиспользованные месяцы, скидка за годовую оплату при перерасчёте сохраняется.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C5"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d01-C",
+     "kind": "number",
+     "text": "Если вы захотите направить официальную претензию, срок ответа на неё составляет 30 рабочих дней.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C3",
+     "label": "d01-ok1",
+     "text": "Деньги возвращаются тем же способом, которым была произведена оплата.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C4",
+     "label": "d01-ok1",
+     "text": "Деньги возвращаются в течение 10 рабочих дней с даты получения заявления.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C6",
+     "label": "d01-ok2",
+     "text": "Автопродление подписки можно отключить в настройках аккаунта в любой момент до даты списания.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 2,
+   "clean_extracted": 2,
+   "grounding": {
+    "rate": 0.7778,
+    "checks": 9,
+    "ok": 7,
+    "by_role": {
+     "analyst": {
+      "checks": 9,
+      "ok": 7
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 22226,
+    "tokens_out": 2079,
+    "cost_usd": 0.0,
+    "llm_calls": 8,
+    "elapsed_s": 35.95,
+    "by_model": {
+     "local": {
+      "tokens_in": 22226,
+      "tokens_out": 2079,
+      "cost_usd": 0.0,
+      "calls": 8
+     }
+    }
+   },
+   "claims": 7,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d01-A",
+    "d01-B",
+    "d01-C",
+    "d01-ok1",
+    "d01-ok2"
+   ]
+  },
+  {
+   "doc": "d02_kp_logistika.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d02",
+   "rows": [
+    {
+     "id": "d02-A",
+     "kind": "number",
+     "text": "Тариф «Команда» рассчитан на команды до 50 пользователей, поэтому формально подходит и вам, но мы рекомендуем «Бизнес».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C1"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d02-B",
+     "kind": "object_swap",
+     "text": "Кроме того, за вашей компанией на тарифе «Бизнес» будет закреплён персональный менеджер.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C6"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d02-C",
+     "kind": "object_swap",
+     "text": "Гарантированная доступность сервиса на тарифе «Бизнес» составляет 99,9% в месяц.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d02-D",
+     "kind": "deadline",
+     "text": "Перенос под ключ занимает не более 5 рабочих дней после получения доступа к исходной системе.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C9"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C2",
+     "label": "d02-ok1",
+     "text": "Стоимость тарифа «Бизнес» составляет 12 990 ₽ в месяц за всю команду.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C3",
+     "label": "d02-ok2",
+     "text": "При оплате на 12 месяцев действует скидка 20%.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C4",
+     "label": "d02-ok3",
+     "text": "Тариф «Бизнес» включает REST API с лимитом 300 запросов в минуту.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C5",
+     "label": "d02-ok3",
+     "text": "Тариф «Бизнес» включает интеграцию с 1С.",
+     "kind": "clean",
+     "r0": "PARTIALLY_SUPPORTED",
+     "final": "PARTIALLY_SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C8",
+     "label": "d02-ok4",
+     "text": "При оплате на год перенос из текущей CRM выполняется бесплатно в объёме до 50 000 записей.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 4,
+   "clean_extracted": 4,
+   "grounding": {
+    "rate": 1.0,
+    "checks": 13,
+    "ok": 13,
+    "by_role": {
+     "analyst": {
+      "checks": 13,
+      "ok": 13
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 32511,
+    "tokens_out": 5133,
+    "cost_usd": 0.0,
+    "llm_calls": 11,
+    "elapsed_s": 96.87,
+    "by_model": {
+     "local": {
+      "tokens_in": 32511,
+      "tokens_out": 5133,
+      "cost_usd": 0.0,
+      "calls": 11
+     }
+    }
+   },
+   "claims": 9,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d02-A",
+    "d02-B",
+    "d02-C",
+    "d02-D",
+    "d02-ok1",
+    "d02-ok2",
+    "d02-ok3",
+    "d02-ok4"
+   ]
+  },
+  {
+   "doc": "d03_otvet_kz_probnyi.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d03",
+   "rows": [
+    {
+     "id": "d03-A",
+     "kind": "object_swap",
+     "text": "Для клиентов из Казахстана пробный период тарифа «Бизнес» составляет 14 дней.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C1"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d03-B",
+     "kind": "object_swap",
+     "text": "Тариф «Команда» в Казахстане рассчитан на команды до 25 пользователей.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d03-C",
+     "kind": "condition",
+     "text": "Если вам удобнее, счёт можно оплатить и в рублях.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C8"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C2",
+     "label": "d03-ok1",
+     "text": "Стоимость тарифа «Команда» для Казахстана — 26 900 ₸ в месяц.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C3",
+     "label": "d03-ok1",
+     "text": "В стоимость тарифа «Команда» для Казахстана НДС уже включён.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C5",
+     "label": "d03-ok2",
+     "text": "При оплате на год клиенты из Казахстана получают скидку 15%.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C6",
+     "label": "d03-ok3",
+     "text": "Данные клиентов хранятся в центре обработки данных в Алматы.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C7",
+     "label": "d03-ok3",
+     "text": "Данные клиентов не передаются за пределы Республики Казахстан.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C9",
+     "label": "d03-ok4",
+     "text": "Поддержка для клиентов из Казахстана доступна также на казахском языке.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 4,
+   "clean_extracted": 4,
+   "grounding": {
+    "rate": 1.0,
+    "checks": 11,
+    "ok": 11,
+    "by_role": {
+     "analyst": {
+      "checks": 11,
+      "ok": 11
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 26194,
+    "tokens_out": 2327,
+    "cost_usd": 0.0,
+    "llm_calls": 10,
+    "elapsed_s": 22.93,
+    "by_model": {
+     "local": {
+      "tokens_in": 26194,
+      "tokens_out": 2327,
+      "cost_usd": 0.0,
+      "calls": 10
+     }
+    }
+   },
+   "claims": 9,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d03-A",
+    "d03-B",
+    "d03-C",
+    "d03-ok1",
+    "d03-ok2",
+    "d03-ok3",
+    "d03-ok4"
+   ]
+  },
+  {
+   "doc": "d04_pamyatka_sla.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d04",
+   "rows": [
+    {
+     "id": "d04-A",
+     "kind": "condition",
+     "text": "Время реакции по SLA — это гарантированное время, за которое проблема будет решена.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d04-B",
+     "kind": "condition",
+     "text": "Компенсация за недоступность выплачивается деньгами на расчётный счёт клиента.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d04-C",
+     "kind": "deadline",
+     "text": "Плановые технические работы проводятся по субботам с 02:00 до 05:00 по московскому времени.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C6"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": false,
+     "critic_only": false
+    },
+    {
+     "id": "d04-D",
+     "kind": "overstatement",
+     "text": "Круглосуточная поддержка по любым обращениям доступна клиентам тарифов «Бизнес» и «Корпоративный».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d04-ok1",
+     "text": "На тарифе «Команда» гарантированная доступность сервиса составляет 99,5% за календарный месяц.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C2",
+     "label": "d04-ok2",
+     "text": "На тарифе «Бизнес» время первой реакции на обращение P1 составляет 1 час.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C5",
+     "label": "d04-ok3",
+     "text": "Компенсация не может превышать 50% месячной стоимости тарифа.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 0.875,
+    "checks": 8,
+    "ok": 7,
+    "by_role": {
+     "analyst": {
+      "checks": 8,
+      "ok": 7
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 22316,
+    "tokens_out": 1927,
+    "cost_usd": 0.0,
+    "llm_calls": 8,
+    "elapsed_s": 24.59,
+    "by_model": {
+     "local": {
+      "tokens_in": 22316,
+      "tokens_out": 1927,
+      "cost_usd": 0.0,
+      "calls": 8
+     }
+    }
+   },
+   "claims": 7,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d04-A",
+    "d04-B",
+    "d04-C",
+    "d04-D",
+    "d04-ok1",
+    "d04-ok2",
+    "d04-ok3"
+   ]
+  },
+  {
+   "doc": "d05_otvet_api.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d05",
+   "rows": [
+    {
+     "id": "d05-A",
+     "kind": "overstatement",
+     "text": "REST API доступен на всех тарифах, включая «Старт».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C1"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d05-B",
+     "kind": "condition",
+     "text": "Если этого не хватит, лимит на тарифе «Бизнес» можно повысить за дополнительную плату.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "OVERSTATED"
+     ],
+     "final": [
+      "OVERSTATED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d05-C",
+     "kind": "number",
+     "text": "Если ваш сервер не ответит, мы повторим доставку вебхука 5 раз.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d05-D",
+     "kind": "condition",
+     "text": "Синхронизация с 1С выполняется в реальном времени, сразу после каждого изменения.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C8"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C2",
+     "label": "d05-ok1",
+     "text": "На тарифе «Бизнес» лимит API составляет 300 запросов в минуту.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C4",
+     "label": "d05-ok2",
+     "text": "При превышении лимита API возвращает код 429.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C5",
+     "label": "d05-ok2",
+     "text": "Запросы, отправленные при превышении лимита API, не тарифицируются.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C6",
+     "label": "d05-ok3",
+     "text": "На тарифе «Бизнес» можно настроить до 50 вебхуков.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 0.7778,
+    "checks": 9,
+    "ok": 7,
+    "by_role": {
+     "analyst": {
+      "checks": 9,
+      "ok": 7
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 25073,
+    "tokens_out": 2369,
+    "cost_usd": 0.0,
+    "llm_calls": 9,
+    "elapsed_s": 31.66,
+    "by_model": {
+     "local": {
+      "tokens_in": 25073,
+      "tokens_out": 2369,
+      "cost_usd": 0.0,
+      "calls": 9
+     }
+    }
+   },
+   "claims": 8,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d05-A",
+    "d05-B",
+    "d05-C",
+    "d05-D",
+    "d05-ok1",
+    "d05-ok2",
+    "d05-ok3"
+   ]
+  },
+  {
+   "doc": "d06_kp_shkola.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d06",
+   "rows": [
+    {
+     "id": "d06-A",
+     "kind": "overstatement",
+     "text": "Эта скидка распространяется на все тарифы, включая «Корпоративный».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C2"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d06-B",
+     "kind": "number",
+     "text": "Скидку для образования можно совместить со скидкой за оплату на год — итоговая скидка составит 50%.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3",
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED",
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED",
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted",
+      "accepted"
+     ],
+     "critic_suggested": [
+      null,
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d06-C",
+     "kind": "number",
+     "text": "Каждый дополнительный час персонального обучения стоит 3 500 ₽.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C9"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d06-D",
+     "kind": "not_in_sources",
+     "text": "Сорока CRM включена в единый реестр российского программного обеспечения.",
+     "expected": [
+      "UNVERIFIABLE",
+      "CONTRADICTED"
+     ],
+     "claims": [
+      "C10"
+     ],
+     "extracted": true,
+     "r0": [
+      "UNVERIFIABLE"
+     ],
+     "final": [
+      "UNVERIFIABLE"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d06-ok1",
+     "text": "Для образовательных учреждений действует скидка 30% на тарифы «Команда» и «Бизнес».",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C5",
+     "label": "d06-ok2",
+     "text": "Для получения скидки достаточно направить в поддержку копию лицензии на образовательную деятельность.",
+     "kind": "clean",
+     "r0": "PARTIALLY_SUPPORTED",
+     "final": "PARTIALLY_SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C6",
+     "label": "d06-ok3",
+     "text": "Еженедельные обучающие вебинары бесплатны.",
+     "kind": "clean",
+     "r0": "PARTIALLY_SUPPORTED",
+     "final": "PARTIALLY_SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C7",
+     "label": "d06-ok3",
+     "text": "Еженедельные обучающие вебинары бесплатны в пробный период.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C8",
+     "label": "d06-ok4",
+     "text": "В тариф «Бизнес» при оплате на год входит 2 часа персонального онбординг-обучения.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    }
+   ],
+   "clean_total": 4,
+   "clean_extracted": 4,
+   "grounding": {
+    "rate": 0.9333,
+    "checks": 15,
+    "ok": 14,
+    "by_role": {
+     "analyst": {
+      "checks": 15,
+      "ok": 14
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 30300,
+    "tokens_out": 3148,
+    "cost_usd": 0.0,
+    "llm_calls": 11,
+    "elapsed_s": 39.79,
+    "by_model": {
+     "local": {
+      "tokens_in": 30300,
+      "tokens_out": 3148,
+      "cost_usd": 0.0,
+      "calls": 11
+     }
+    }
+   },
+   "claims": 10,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d06-A",
+    "d06-B",
+    "d06-C",
+    "d06-D",
+    "d06-ok1",
+    "d06-ok2",
+    "d06-ok3",
+    "d06-ok4"
+   ]
+  },
+  {
+   "doc": "d07_otvet_bezopasnost.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d07",
+   "rows": [
+    {
+     "id": "d07-A",
+     "kind": "object_swap",
+     "text": "Резервные копии создаются ежедневно и на тарифе «Бизнес» хранятся 90 дней.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C2",
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "PARTIALLY_SUPPORTED",
+      "SUPPORTED"
+     ],
+     "final": [
+      "PARTIALLY_SUPPORTED",
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted",
+      "accepted"
+     ],
+     "critic_suggested": [
+      null,
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d07-B",
+     "kind": "object_swap",
+     "text": "Единый вход по протоколу SAML 2.0 (SSO) доступен на тарифе «Бизнес».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d07-C",
+     "kind": "not_in_sources",
+     "text": "Сервис сертифицирован по международному стандарту ISO/IEC 27001.",
+     "expected": [
+      "UNVERIFIABLE",
+      "CONTRADICTED"
+     ],
+     "claims": [
+      "C6"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": false,
+     "critic_only": false
+    },
+    {
+     "id": "d07-D",
+     "kind": "overstatement",
+     "text": "Отчёт о последнем тесте на проникновение мы предоставляем по запросу любому клиенту.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d07-ok1",
+     "text": "Все данные клиентов, включая файлы и резервные копии, хранятся в зашифрованном виде с использованием AES-256",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C5",
+     "label": "d07-ok2",
+     "text": "На тарифе «Бизнес» записи журнала аудита хранятся 1 год",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C8",
+     "label": "d07-ok3",
+     "text": "Принудительное включение двухфакторной аутентификации для всех сотрудников доступно на тарифе «Бизнес»",
+     "kind": "clean",
+     "r0": "PARTIALLY_SUPPORTED",
+     "final": "PARTIALLY_SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 0.875,
+    "checks": 8,
+    "ok": 7,
+    "by_role": {
+     "analyst": {
+      "checks": 8,
+      "ok": 7
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 23941,
+    "tokens_out": 2355,
+    "cost_usd": 0.0,
+    "llm_calls": 9,
+    "elapsed_s": 32.32,
+    "by_model": {
+     "local": {
+      "tokens_in": 23941,
+      "tokens_out": 2355,
+      "cost_usd": 0.0,
+      "calls": 9
+     }
+    }
+   },
+   "claims": 8,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d07-A",
+    "d07-B",
+    "d07-C",
+    "d07-D",
+    "d07-ok1",
+    "d07-ok2",
+    "d07-ok3"
+   ]
+  },
+  {
+   "doc": "d08_otvet_blokirovka.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d08",
+   "rows": [
+    {
+     "id": "d08-A",
+     "kind": "outdated",
+     "text": "Согласно п. 3.4 оферты, если оплата не поступила, доступ блокируется через 3 календарных дня после окончания оплаченного периода.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C1",
+      "C2",
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED",
+      "CONTRADICTED",
+      "PARTIALLY_SUPPORTED"
+     ],
+     "final": [
+      "CONTRADICTED",
+      "CONTRADICTED",
+      "PARTIALLY_SUPPORTED"
+     ],
+     "status": [
+      "accepted",
+      "accepted",
+      "accepted"
+     ],
+     "critic_suggested": [
+      null,
+      null,
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d08-B",
+     "kind": "outdated",
+     "text": "Об изменении цен тарифов мы уведомляем не менее чем за 14 календарных дней.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d08-C",
+     "kind": "wrong_clause",
+     "text": "Согласно п. 9.2 оферты, за каждый день просрочки оплаты начисляется пеня 0,1%.",
+     "expected": [
+      "UNVERIFIABLE",
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C8",
+      "C9"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED",
+      "PARTIALLY_SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED",
+      "PARTIALLY_SUPPORTED"
+     ],
+     "status": [
+      "accepted",
+      "accepted"
+     ],
+     "critic_suggested": [
+      null,
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C4",
+     "label": "d08-ok1",
+     "text": "Данные заблокированного аккаунта хранятся 60 календарных дней, после чего удаляются.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C5",
+     "label": "d08-ok2",
+     "text": "Выставленный счёт действителен в течение 5 банковских дней.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C6",
+     "label": "d08-ok3",
+     "text": "При оплате банковской картой подписка продлевается автоматически на тот же срок.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 0.8,
+    "checks": 15,
+    "ok": 12,
+    "by_role": {
+     "analyst": {
+      "checks": 15,
+      "ok": 12
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 29624,
+    "tokens_out": 3194,
+    "cost_usd": 0.0,
+    "llm_calls": 10,
+    "elapsed_s": 37.77,
+    "by_model": {
+     "local": {
+      "tokens_in": 29624,
+      "tokens_out": 3194,
+      "cost_usd": 0.0,
+      "calls": 10
+     }
+    }
+   },
+   "claims": 9,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d08-A",
+    "d08-B",
+    "d08-C",
+    "d08-ok1",
+    "d08-ok2",
+    "d08-ok3"
+   ]
+  },
+  {
+   "doc": "d09_kp_kz_pereezd.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d09",
+   "rows": [
+    {
+     "id": "d09-A",
+     "kind": "object_swap",
+     "text": "При оплате тарифа «Бизнес» сразу на два года вы получите скидку 25%.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C2"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d09-B",
+     "kind": "condition",
+     "text": "При переносе под ключ мы также перенесём настройки автоматизаций и шаблоны документов.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C6"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d09-C",
+     "kind": "wrong_clause",
+     "text": "Согласно разделу 6 оферты, данные казахстанских клиентов хранятся в центре обработки данных в Москве.",
+     "expected": [
+      "UNVERIFIABLE",
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C8"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d09-D",
+     "kind": "number",
+     "text": "Электронный счёт-фактура выставляется через ЭСФ в течение 5 календарных дней после оказания услуг.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C9"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d09-ok1",
+     "text": "Стоимость тарифа «Бизнес» для Казахстана — 69 900 ₸ в месяц с учётом НДС.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C3",
+     "label": "d09-ok2",
+     "text": "Интеграция с 1С для казахстанских клиентов доступна начиная с тарифа «Бизнес».",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C4",
+     "label": "d09-ok3",
+     "text": "Самостоятельный импорт из Excel и CSV бесплатен.",
+     "kind": "clean",
+     "r0": "PARTIALLY_SUPPORTED",
+     "final": "PARTIALLY_SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C5",
+     "label": "d09-ok3",
+     "text": "За один импорт можно загрузить до 100 000 записей.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C7",
+     "label": "d09-ok4",
+     "text": "Если нужно перенести и вложения, срок переноса увеличится до 15 рабочих дней.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 4,
+   "clean_extracted": 4,
+   "grounding": {
+    "rate": 1.0,
+    "checks": 11,
+    "ok": 11,
+    "by_role": {
+     "analyst": {
+      "checks": 11,
+      "ok": 11
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 26984,
+    "tokens_out": 2653,
+    "cost_usd": 0.0,
+    "llm_calls": 10,
+    "elapsed_s": 33.29,
+    "by_model": {
+     "local": {
+      "tokens_in": 26984,
+      "tokens_out": 2653,
+      "cost_usd": 0.0,
+      "calls": 10
+     }
+    }
+   },
+   "claims": 9,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d09-A",
+    "d09-B",
+    "d09-C",
+    "d09-D",
+    "d09-ok1",
+    "d09-ok2",
+    "d09-ok3",
+    "d09-ok4"
+   ]
+  },
+  {
+   "doc": "d10_otvet_ai.md",
+   "difficulty": "basic",
+   "run_id": "eval-20261110-151420-own-C-d10",
+   "rows": [
+    {
+     "id": "d10-A",
+     "kind": "number",
+     "text": "На тарифе «Бизнес» каждый пользователь может сделать до 500 запросов к AI-ассистенту в месяц.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C2"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": false,
+     "critic_only": false
+    },
+    {
+     "id": "d10-B",
+     "kind": "condition",
+     "text": "В мобильном приложении можно полноценно работать офлайн: изменения синхронизируются после подключения к интернету.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d10-C",
+     "kind": "object_swap",
+     "text": "Автоматическая расшифровка звонков доступна на тарифе «Бизнес».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C5"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": false,
+     "critic_only": false
+    },
+    {
+     "id": "d10-D",
+     "kind": "not_in_sources",
+     "text": "AI-ассистент работает на собственной модели Сорока, обученной на 10 миллионах диалогов отделов продаж.",
+     "expected": [
+      "UNVERIFIABLE",
+      "CONTRADICTED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d10-ok1",
+     "text": "AI-ассистент доступен на тарифах «Бизнес» и «Корпоративный».",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C3",
+     "label": "d10-ok2",
+     "text": "На тарифе «Команда» доступно до 20 активных автоматизаций.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C6",
+     "label": "d10-ok3",
+     "text": "Интеграция с Telegram на тарифе «Команда» бесплатна.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 0.875,
+    "checks": 8,
+    "ok": 7,
+    "by_role": {
+     "analyst": {
+      "checks": 8,
+      "ok": 7
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 21394,
+    "tokens_out": 1887,
+    "cost_usd": 0.0,
+    "llm_calls": 8,
+    "elapsed_s": 28.11,
+    "by_model": {
+     "local": {
+      "tokens_in": 21394,
+      "tokens_out": 1887,
+      "cost_usd": 0.0,
+      "calls": 8
+     }
+    }
+   },
+   "claims": 7,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d10-A",
+    "d10-B",
+    "d10-C",
+    "d10-D",
+    "d10-ok1",
+    "d10-ok2",
+    "d10-ok3"
+   ]
+  },
+  {
+   "doc": "d11_kp_rost_120.md",
+   "difficulty": "hard",
+   "run_id": "eval-20261110-151420-own-C-d11",
+   "rows": [
+    {
+     "id": "d11-A",
+     "kind": "arithmetic",
+     "text": "Для 120 сотрудников доплата за дополнительных пользователей составит 2 000 ₽ в месяц.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d11-B",
+     "kind": "arithmetic",
+     "text": "Это даёт экономию 25 980 ₽ в год по сравнению с помесячной оплатой.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "UNVERIFIABLE"
+     ],
+     "final": [
+      "UNVERIFIABLE"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d11-C",
+     "kind": "condition",
+     "text": "Если команда вырастет до 180 человек, вы сможете остаться на тарифе «Бизнес», просто докупив пользователей.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C8"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d11-D",
+     "kind": "overstatement",
+     "text": "Дополнительное хранилище можно докупить на любом тарифе пакетами по 100 ГБ за 590 ₽ в месяц.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C9",
+      "C10"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED",
+      "PARTIALLY_SUPPORTED"
+     ],
+     "final": [
+      "CONTRADICTED",
+      "PARTIALLY_SUPPORTED"
+     ],
+     "status": [
+      "accepted",
+      "accepted"
+     ],
+     "critic_suggested": [
+      null,
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d11-ok1",
+     "text": "На тарифе «Бизнес» можно докупить пользователей сверх 100.",
+     "kind": "clean",
+     "r0": "PARTIALLY_SUPPORTED",
+     "final": "PARTIALLY_SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C2",
+     "label": "d11-ok1",
+     "text": "Каждый дополнительный пользователь на тарифе «Бизнес» стоит 150 ₽ в месяц.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C4",
+     "label": "d11-ok2",
+     "text": "Тариф «Бизнес» на 120 сотрудников обойдётся в 15 990 ₽ в месяц при помесячной оплате.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C5",
+     "label": "d11-ok3",
+     "text": "При оплате на год предоставляется скидка 20%.",
+     "kind": "clean",
+     "r0": "PARTIALLY_SUPPORTED",
+     "final": "PARTIALLY_SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C6",
+     "label": "d11-ok3",
+     "text": "Тариф «Бизнес» без дополнительных пользователей при оплате на год обойдётся в 124 704 ₽ за год.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 1.0,
+    "checks": 16,
+    "ok": 16,
+    "by_role": {
+     "analyst": {
+      "checks": 16,
+      "ok": 16
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 30773,
+    "tokens_out": 3581,
+    "cost_usd": 0.0,
+    "llm_calls": 11,
+    "elapsed_s": 37.36,
+    "by_model": {
+     "local": {
+      "tokens_in": 30773,
+      "tokens_out": 3581,
+      "cost_usd": 0.0,
+      "calls": 11
+     }
+    }
+   },
+   "claims": 10,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d11-A",
+    "d11-B",
+    "d11-C",
+    "d11-D",
+    "d11-ok1",
+    "d11-ok2",
+    "d11-ok3"
+   ]
+  },
+  {
+   "doc": "d12_otvet_vozvrat_god.md",
+   "difficulty": "hard",
+   "run_id": "eval-20261110-151420-own-C-d12",
+   "rows": [
+    {
+     "id": "d12-A",
+     "kind": "condition",
+     "text": "Мы вернём стоимость неиспользованных полных месяцев по той же цене, по которой вы их оплатили, со скидкой.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d12-B",
+     "kind": "arithmetic",
+     "text": "За два использованных месяца из оплаченной суммы будет удержано 20 784 ₽.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": false,
+     "critic_only": false
+    },
+    {
+     "id": "d12-C",
+     "kind": "deadline",
+     "text": "Деньги поступят в течение 10 календарных дней с даты получения заявления.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C5"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": null,
+     "text": "Тариф «Бизнес» при оплате на год предоставляется со скидкой 20%.",
+     "kind": "extra",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C2",
+     "label": "d12-ok1",
+     "text": "Полный возврат оплаченной суммы возможен только в течение 14 календарных дней с даты оплаты.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C6",
+     "label": "d12-ok2",
+     "text": "Возврат производится тем же способом, которым клиент оплачивал.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C7",
+     "label": "d12-ok3",
+     "text": "Расторгнуть договор можно в любой момент, отключив подписку в настройках аккаунта.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 0.8889,
+    "checks": 9,
+    "ok": 8,
+    "by_role": {
+     "analyst": {
+      "checks": 9,
+      "ok": 8
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 22229,
+    "tokens_out": 2118,
+    "cost_usd": 0.0,
+    "llm_calls": 8,
+    "elapsed_s": 27.72,
+    "by_model": {
+     "local": {
+      "tokens_in": 22229,
+      "tokens_out": 2118,
+      "cost_usd": 0.0,
+      "calls": 8
+     }
+    }
+   },
+   "claims": 7,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d12-A",
+    "d12-B",
+    "d12-C",
+    "d12-ok1",
+    "d12-ok2",
+    "d12-ok3"
+   ]
+  },
+  {
+   "doc": "d13_pamyatka_kompensaciya.md",
+   "difficulty": "hard",
+   "run_id": "eval-20261110-151420-own-C-d13",
+   "rows": [
+    {
+     "id": "d13-A",
+     "kind": "arithmetic",
+     "text": "Если доступность на тарифе «Команда» за месяц составила 99,2%, компенсация составит 20% месячной стоимости.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C2"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d13-B",
+     "kind": "arithmetic",
+     "text": "При доступности 98% на тарифе «Корпоративный» клиенту положена компенсация 100% месячной стоимости.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d13-C",
+     "kind": "deadline",
+     "text": "Запрос на компенсацию принимается в течение 30 календарных дней с даты инцидента.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": false,
+     "critic_only": false
+    },
+    {
+     "id": "d13-D",
+     "kind": "condition",
+     "text": "В праздничные дни поддержка не работает, все обращения рассматриваются после праздников.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7",
+      "C8"
+     ],
+     "extracted": true,
+     "r0": [
+      "PARTIALLY_SUPPORTED",
+      "CONTRADICTED"
+     ],
+     "final": [
+      "PARTIALLY_SUPPORTED",
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted",
+      "accepted"
+     ],
+     "critic_suggested": [
+      null,
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d13-ok1",
+     "text": "При доступности 99,5% за месяц на тарифе «Бизнес» клиенту положена компенсация 30% месячной стоимости тарифа.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C5",
+     "label": "d13-ok2",
+     "text": "Время плановых технических работ не учитывается при расчёте доступности.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C6",
+     "label": "d13-ok3",
+     "text": "Экстренные работы для устранения уязвимостей могут проводиться без предварительного уведомления.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 1.0,
+    "checks": 10,
+    "ok": 10,
+    "by_role": {
+     "analyst": {
+      "checks": 10,
+      "ok": 10
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 24656,
+    "tokens_out": 2713,
+    "cost_usd": 0.0,
+    "llm_calls": 9,
+    "elapsed_s": 29.76,
+    "by_model": {
+     "local": {
+      "tokens_in": 24656,
+      "tokens_out": 2713,
+      "cost_usd": 0.0,
+      "calls": 9
+     }
+    }
+   },
+   "claims": 8,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d13-A",
+    "d13-B",
+    "d13-C",
+    "d13-D",
+    "d13-ok1",
+    "d13-ok2",
+    "d13-ok3"
+   ]
+  },
+  {
+   "doc": "d14_otvet_nko_start.md",
+   "difficulty": "hard",
+   "run_id": "eval-20261110-151420-own-C-d14",
+   "rows": [
+    {
+     "id": "d14-A",
+     "kind": "condition",
+     "text": "Как некоммерческая организация вы получите скидку 30% на ваш текущий тариф «Старт».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C1"
+     ],
+     "extracted": true,
+     "r0": [
+      "SUPPORTED"
+     ],
+     "final": [
+      "SUPPORTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": false,
+     "caught_r0": false,
+     "flagged": false,
+     "critic_only": false
+    },
+    {
+     "id": "d14-B",
+     "kind": "condition",
+     "text": "Скидку для НКО можно также совместить с акцией «Переезд».",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d14-C",
+     "kind": "number",
+     "text": "По акции «Переезд» первые 6 месяцев тарифа «Команда» стоят вдвое дешевле.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C4"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d14-D",
+     "kind": "overstatement",
+     "text": "Интеграция с Telegram бесплатна на всех тарифах.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C6"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C2",
+     "label": "d14-ok1",
+     "text": "При переходе на тариф «Команда» с оплатой на год скидка для НКО суммируется со скидкой за годовую оплату, и итоговая скидка составит 40%.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C5",
+     "label": "d14-ok2",
+     "text": "Для получения скидки НКО нужно направить в поддержку копию устава.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 2,
+   "clean_extracted": 2,
+   "grounding": {
+    "rate": 1.0,
+    "checks": 6,
+    "ok": 6,
+    "by_role": {
+     "analyst": {
+      "checks": 6,
+      "ok": 6
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 17985,
+    "tokens_out": 1944,
+    "cost_usd": 0.0,
+    "llm_calls": 7,
+    "elapsed_s": 25.03,
+    "by_model": {
+     "local": {
+      "tokens_in": 17985,
+      "tokens_out": 1944,
+      "cost_usd": 0.0,
+      "calls": 7
+     }
+    }
+   },
+   "claims": 6,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d14-A",
+    "d14-B",
+    "d14-C",
+    "d14-D",
+    "d14-ok1",
+    "d14-ok2"
+   ]
+  },
+  {
+   "doc": "d15_otvet_kz_dannye.md",
+   "difficulty": "hard",
+   "run_id": "eval-20261110-151420-own-C-d15",
+   "rows": [
+    {
+     "id": "d15-A",
+     "kind": "condition",
+     "text": "Продлевать пробный период можно несколько раз, пока вы не примете решение.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C3"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d15-B",
+     "kind": "object_swap",
+     "text": "Резервные копии ваших данных хранятся в центре обработки данных в Москве.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C6"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d15-C",
+     "kind": "condition",
+     "text": "На тарифе «Команда» восстановление данных из резервной копии выполняется бесплатно раз в квартал.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C7"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    },
+    {
+     "id": "d15-D",
+     "kind": "deadline",
+     "text": "Электронный счёт-фактура выставляется через ЭСФ в течение 15 рабочих дней после оказания услуг.",
+     "expected": [
+      "CONTRADICTED",
+      "OVERSTATED"
+     ],
+     "claims": [
+      "C8"
+     ],
+     "extracted": true,
+     "r0": [
+      "CONTRADICTED"
+     ],
+     "final": [
+      "CONTRADICTED"
+     ],
+     "status": [
+      "accepted"
+     ],
+     "critic_suggested": [
+      null
+     ],
+     "caught": true,
+     "caught_r0": true,
+     "flagged": true,
+     "critic_only": false
+    }
+   ],
+   "others": [
+    {
+     "claim": "C1",
+     "label": "d15-ok1",
+     "text": "Пробный период для Казахстана можно один раз продлить ещё на 7 дней при обращении к менеджеру.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C2",
+     "label": "d15-ok1",
+     "text": "Продление пробного периода для Казахстана составляет 7 дней.",
+     "kind": "clean",
+     "r0": "CONTRADICTED",
+     "final": "CONTRADICTED",
+     "status": "accepted",
+     "fp_strict": true,
+     "fp_review": true
+    },
+    {
+     "claim": "C4",
+     "label": "d15-ok2",
+     "text": "Перенос аккаунта между регионами возможен по отдельному запросу.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    },
+    {
+     "claim": "C5",
+     "label": "d15-ok2",
+     "text": "Перенос аккаунта между регионами занимает до 10 рабочих дней.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": true
+    },
+    {
+     "claim": "C9",
+     "label": "d15-ok3",
+     "text": "Оплата для клиентов из Казахстана принимается в тенге банковской картой или по счёту.",
+     "kind": "clean",
+     "r0": "SUPPORTED",
+     "final": "SUPPORTED",
+     "status": "accepted",
+     "fp_strict": false,
+     "fp_review": false
+    }
+   ],
+   "clean_total": 3,
+   "clean_extracted": 3,
+   "grounding": {
+    "rate": 0.7778,
+    "checks": 9,
+    "ok": 7,
+    "by_role": {
+     "analyst": {
+      "checks": 9,
+      "ok": 7
+     }
+    }
+   },
+   "metrics": {
+    "tokens_in": 27292,
+    "tokens_out": 2374,
+    "cost_usd": 0.0,
+    "llm_calls": 10,
+    "elapsed_s": 22.64,
+    "by_model": {
+     "local": {
+      "tokens_in": 27292,
+      "tokens_out": 2374,
+      "cost_usd": 0.0,
+      "calls": 10
+     }
+    }
+   },
+   "claims": 9,
+   "claim_errors": 0,
+   "labels_seen": [
+    "d15-A",
+    "d15-B",
+    "d15-C",
+    "d15-D",
+    "d15-ok1",
+    "d15-ok2",
+    "d15-ok3"
+   ]
+  }
+ ]
+}

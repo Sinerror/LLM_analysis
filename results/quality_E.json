@@ -1,0 +1,33 @@
+{
+  "name": "E",
+  "target": "ollama",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "n": 150,
+  "accuracy": {
+    "topic": 0.9133,
+    "priority": 0.72,
+    "route": 0.78,
+    "all": 0.58
+  },
+  "ci95": {
+    "topic": 0.0456,
+    "priority": 0.0712,
+    "route": 0.0658,
+    "all": 0.078
+  },
+  "invalid_json": 0,
+  "tokens": {
+    "triage_in": 893.9,
+    "triage_out": 21.0,
+    "draft_in": 222.6,
+    "draft_out": 158.7
+  },
+  "drafts": {
+    "n": 138,
+    "failed": 0,
+    "with_cjk": 9,
+    "truncated": 0,
+    "chars_avg": 468
+  },
+  "wall_sec": 255.8
+}

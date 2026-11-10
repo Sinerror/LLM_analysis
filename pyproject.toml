@@ -1,0 +1,15 @@
+[project]
+name = "own-llm-vs-api"
+version = "0.1.0"
+description = "Своя LLM (vLLM, квантование) против внешнего API: нагрузка, качество, точка безубыточности"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]
+
+[tool.uv]
+package = false

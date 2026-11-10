@@ -1,0 +1,33 @@
+{
+  "name": "api_deepseek-v4.1-flash",
+  "target": "api",
+  "model": "deepseek-v4.1-flash",
+  "n": 150,
+  "accuracy": {
+    "topic": 0.9533,
+    "priority": 0.9,
+    "route": 0.9667,
+    "all": 0.8533
+  },
+  "ci95": {
+    "topic": 0.0352,
+    "priority": 0.0484,
+    "route": 0.0307,
+    "all": 0.0566
+  },
+  "invalid_json": 0,
+  "tokens": {
+    "triage_in": 842.7,
+    "triage_out": 238.8,
+    "draft_in": 183.2,
+    "draft_out": 573.9
+  },
+  "drafts": {
+    "n": 138,
+    "failed": 0,
+    "with_cjk": 0,
+    "truncated": 0,
+    "chars_avg": 487
+  },
+  "wall_sec": 358.0
+}

@@ -1,0 +1,8 @@
+{
+  "variant": "C",
+  "title": "7B GPTQ int4",
+  "engine": "vllm",
+  "model": "Qwen/Qwen2.5-7B-Instruct-GPTQ-Int4",
+  "max_model_len": 16384,
+  "startup_sec": 294
+}

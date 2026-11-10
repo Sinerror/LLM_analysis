@@ -1,0 +1,93 @@
+{
+  "name": "D_fine",
+  "target": "vllm",
+  "model": "local",
+  "sla_sec": 10.0,
+  "duration_sec": 60,
+  "closed": {},
+  "open": [
+    {
+      "requests": 157,
+      "errors": 0,
+      "wall_sec": 60,
+      "req_per_sec": 2.617,
+      "out_tok_per_sec": 225.3,
+      "in_tok_per_sec": 1531.0,
+      "ttft_p50": 0.211,
+      "ttft_p95": 0.44,
+      "latency_p50": 1.558,
+      "latency_p95": 9.502,
+      "by_kind": {
+        "triage": {
+          "n": 82,
+          "tokens_in_avg": 903.6,
+          "tokens_out_avg": 20.9,
+          "ttft_p95": 0.44,
+          "latency_p50": 1.161,
+          "latency_p95": 1.516
+        },
+        "draft": {
+          "n": 75,
+          "tokens_in_avg": 236.9,
+          "tokens_out_avg": 157.4,
+          "ttft_p95": 0.44,
+          "latency_p50": 7.472,
+          "latency_p95": 9.819
+        }
+      },
+      "vram_mb_max": 14625.0,
+      "gpu_util_avg": 98.5,
+      "power_w_avg": 123.6,
+      "power_w_max": 141.31,
+      "temp_c_max": 68.0,
+      "rate": 2.5,
+      "sla_ok": true
+    },
+    {
+      "requests": 194,
+      "errors": 0,
+      "wall_sec": 60,
+      "req_per_sec": 3.233,
+      "out_tok_per_sec": 259.1,
+      "in_tok_per_sec": 1936.2,
+      "ttft_p50": 0.234,
+      "ttft_p95": 0.512,
+      "latency_p50": 2.051,
+      "latency_p95": 10.262,
+      "by_kind": {
+        "triage": {
+          "n": 107,
+          "tokens_in_avg": 899.8,
+          "tokens_out_avg": 20.9,
+          "ttft_p95": 0.463,
+          "latency_p50": 1.242,
+          "latency_p95": 2.222
+        },
+        "draft": {
+          "n": 87,
+          "tokens_in_avg": 228.7,
+          "tokens_out_avg": 153.0,
+          "ttft_p95": 0.516,
+          "latency_p50": 7.942,
+          "latency_p95": 10.929
+        }
+      },
+      "vram_mb_max": 14540.0,
+      "gpu_util_avg": 100.0,
+      "power_w_avg": 128.2,
+      "power_w_max": 146.6,
+      "temp_c_max": 70.0,
+      "rate": 3.0,
+      "sla_ok": false
+    }
+  ],
+  "started": "2026-11-10 16:34",
+  "idle": {
+    "vram_mb_max": 13838.0,
+    "gpu_util_avg": 3.4,
+    "power_w_avg": 7.8,
+    "power_w_max": 17.01,
+    "temp_c_max": 48.0
+  },
+  "max_rate_within_sla": 2.5
+}

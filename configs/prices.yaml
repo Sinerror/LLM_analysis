@@ -1,0 +1,61 @@
+# Все входные данные модели стоимости. Меняются здесь — пересчитываются scripts/cost_model.py.
+# Цены API — ОФИЦИАЛЬНЫЕ прайсы провайдеров (не цена роутера, через который шли прогоны).
+as_of: "2026-11-10"
+
+fx:
+  usd_kzt: 448.98        # Нацбанк РК, официальный курс на 2026-11-10
+  source: https://nationalbank.kz/ru/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut
+
+api:                      # USD за 1 млн токенов, стандартный тариф, без кэша и batch-скидок
+  gpt-6-luna:
+    provider: OpenAI
+    input: 0.10
+    cached_input: 0.01
+    output: 0.50
+    source: https://developers.openai.com/api/docs/pricing
+  gpt-6.1-sol:
+    provider: OpenAI
+    input: 2.00
+    cached_input: 0.10
+    output: 10.00
+    source: https://developers.openai.com/api/docs/pricing
+  claude-haiku-5-5:
+    provider: Anthropic
+    input: 0.10
+    cached_input: 0.01
+    output: 0.50
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+  deepseek-v4.1-flash:
+    provider: DeepSeek
+    input: 0.30           # пиковый тариф; вне пика вдвое дешевле
+    cached_input: 0.006
+    output: 1.20
+    source: https://api-docs.deepseek.com/quick_start/pricing
+
+gpu:
+  name: RTX 4060 Ti 16 ГБ
+  price_kzt: 270000       # цена НОВОЙ карты сейчас: 246–290 тыс. ₸ в магазинах РК (e-katalog.kz, technodom.kz), ноябрь 2026
+  amortization_years: 3
+  residual_share: 0.25    # остаточная стоимость через 3 года (вторичный рынок)
+  host_price_kzt: 250000  # остальной ПК под сервер (CPU, 32 ГБ ОЗУ, БП, SSD); 0 — если железо уже есть
+  host_overhead_w: 80     # потребление системы без GPU
+
+electricity:
+  kzt_per_kwh: 45.59      # Алматы, население, с НДС, с 12.09.2026; для юрлиц подставить свой тариф
+  source: https://bes.media/news/s-12-sentyabrya-v-almaty-podorozhaet-elektroenergiya/
+
+ops:
+  admin_hours_per_month: 4   # сопровождение своего сервера
+  admin_rate_usd: 15         # ставка часа; 0 — «делаю сам, время не считаю»
+
+load:
+  peak_factor: 3.0        # пиковый час / средний час: мощность нужна под пик, а не под среднее
+  work_hours_per_day: 24  # сервер включён круглосуточно
+
+# Эталон DocCheck: тот же прогон (те же 123 утверждения, без критика) с аналитиком через API.
+# Взят из репозитория DocCheck, evals/eval-20261107-180552-analyst-only.json
+doccheck_reference:
+  analyst: deepseek-v4.1-flash
+  recall_strict: 0.964
+  fp_strict_clean: 0.052
+  grounding_rate: 1.0

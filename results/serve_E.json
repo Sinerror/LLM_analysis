@@ -1,0 +1,8 @@
+{
+  "variant": "E",
+  "title": "7B GGUF Q4_K_M (Ollama, настройки по умолчанию)",
+  "engine": "ollama",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "max_model_len": 4096,
+  "startup_sec": 175
+}

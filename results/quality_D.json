@@ -1,0 +1,33 @@
+{
+  "name": "D",
+  "target": "vllm",
+  "model": "local",
+  "n": 150,
+  "accuracy": {
+    "topic": 0.92,
+    "priority": 0.7733,
+    "route": 0.92,
+    "all": 0.6933
+  },
+  "ci95": {
+    "topic": 0.0441,
+    "priority": 0.0665,
+    "route": 0.0441,
+    "all": 0.073
+  },
+  "invalid_json": 0,
+  "tokens": {
+    "triage_in": 893.9,
+    "triage_out": 21.0,
+    "draft_in": 222.6,
+    "draft_out": 153.4
+  },
+  "drafts": {
+    "n": 138,
+    "failed": 0,
+    "with_cjk": 1,
+    "truncated": 0,
+    "chars_avg": 481
+  },
+  "wall_sec": 141.5
+}

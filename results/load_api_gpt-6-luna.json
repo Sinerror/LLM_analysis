@@ -1,0 +1,72 @@
+{
+  "name": "api_gpt-6-luna",
+  "target": "api",
+  "model": "gpt-6-luna",
+  "sla_sec": 10.0,
+  "duration_sec": 40.0,
+  "closed": {
+    "1": {
+      "requests": 8,
+      "errors": 0,
+      "wall_sec": 45.5,
+      "req_per_sec": 0.176,
+      "out_tok_per_sec": 9.7,
+      "in_tok_per_sec": 842.5,
+      "ttft_p50": 4.401,
+      "ttft_p95": 8.323,
+      "latency_p50": 5.002,
+      "latency_p95": 8.487,
+      "by_kind": {
+        "triage": {
+          "n": 4,
+          "tokens_in_avg": 5072.5,
+          "tokens_out_avg": 35.2,
+          "ttft_p95": 7.131,
+          "latency_p50": 4.973,
+          "latency_p95": 7.185
+        },
+        "draft": {
+          "n": 4,
+          "tokens_in_avg": 4511.0,
+          "tokens_out_avg": 74.8,
+          "ttft_p95": 8.125,
+          "latency_p50": 5.834,
+          "latency_p95": 8.68
+        }
+      }
+    },
+    "8": {
+      "requests": 58,
+      "errors": 0,
+      "wall_sec": 45.2,
+      "req_per_sec": 1.283,
+      "out_tok_per_sec": 89.3,
+      "in_tok_per_sec": 6134.2,
+      "ttft_p50": 4.133,
+      "ttft_p95": 9.415,
+      "latency_p50": 5.316,
+      "latency_p95": 11.599,
+      "by_kind": {
+        "triage": {
+          "n": 25,
+          "tokens_in_avg": 5092.0,
+          "tokens_out_avg": 37.8,
+          "ttft_p95": 11.338,
+          "latency_p50": 4.897,
+          "latency_p95": 11.932
+        },
+        "draft": {
+          "n": 33,
+          "tokens_in_avg": 4547.6,
+          "tokens_out_avg": 93.6,
+          "ttft_p95": 9.162,
+          "latency_p50": 5.427,
+          "latency_p95": 11.354
+        }
+      }
+    }
+  },
+  "open": [],
+  "started": "2026-11-10 15:52",
+  "max_rate_within_sla": null
+}

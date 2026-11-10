@@ -1,0 +1,72 @@
+{
+  "name": "api_gpt-6.1-sol",
+  "target": "api",
+  "model": "gpt-6.1-sol",
+  "sla_sec": 10.0,
+  "duration_sec": 40.0,
+  "closed": {
+    "1": {
+      "requests": 10,
+      "errors": 0,
+      "wall_sec": 40.6,
+      "req_per_sec": 0.246,
+      "out_tok_per_sec": 19.0,
+      "in_tok_per_sec": 105.3,
+      "ttft_p50": 3.111,
+      "ttft_p95": 4.568,
+      "latency_p50": 3.851,
+      "latency_p95": 5.115,
+      "by_kind": {
+        "triage": {
+          "n": 5,
+          "tokens_in_avg": 700.8,
+          "tokens_out_avg": 65.6,
+          "ttft_p95": 4.05,
+          "latency_p50": 3.597,
+          "latency_p95": 4.399
+        },
+        "draft": {
+          "n": 5,
+          "tokens_in_avg": 154.4,
+          "tokens_out_avg": 89.0,
+          "ttft_p95": 4.597,
+          "latency_p50": 4.768,
+          "latency_p95": 5.221
+        }
+      }
+    },
+    "8": {
+      "requests": 69,
+      "errors": 0,
+      "wall_sec": 44.9,
+      "req_per_sec": 1.537,
+      "out_tok_per_sec": 125.5,
+      "in_tok_per_sec": 646.6,
+      "ttft_p50": 3.068,
+      "ttft_p95": 7.842,
+      "latency_p50": 4.186,
+      "latency_p95": 8.588,
+      "by_kind": {
+        "triage": {
+          "n": 32,
+          "tokens_in_avg": 714.3,
+          "tokens_out_avg": 67.2,
+          "ttft_p95": 6.584,
+          "latency_p50": 4.127,
+          "latency_p95": 7.226
+        },
+        "draft": {
+          "n": 37,
+          "tokens_in_avg": 166.6,
+          "tokens_out_avg": 94.1,
+          "ttft_p95": 12.137,
+          "latency_p50": 4.186,
+          "latency_p95": 14.391
+        }
+      }
+    }
+  },
+  "open": [],
+  "started": "2026-11-10 15:55",
+  "max_rate_within_sla": null
+}

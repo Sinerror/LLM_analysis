@@ -1,0 +1,8 @@
+{
+  "variant": "A",
+  "title": "7B FP8 (W8A8, llm-compressor)",
+  "engine": "vllm",
+  "model": "/models/Qwen2.5-7B-Instruct-FP8-dynamic",
+  "max_model_len": 16384,
+  "startup_sec": 179
+}
